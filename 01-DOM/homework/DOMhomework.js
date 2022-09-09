@@ -72,7 +72,16 @@ function buildToDo(todo, index) {
 
 function buildToDos(toDos) {
   // Tu código acá:
-  return toDos.map(buildToDo);
+  //todos [{ }, { }, { },{ },]
+  //todos[0]
+  let arr = toDos.map(function (elemento, index) {
+    return buildToDo(elemento, index);
+  });
+
+  //arrow function version
+  // let arr = toDos.map((e,i) => buildToDo(e, i));
+
+  return arr;
 }
 
 // La función 'displayToDos' se va a encargar de que se vean los toDo's en pantalla
