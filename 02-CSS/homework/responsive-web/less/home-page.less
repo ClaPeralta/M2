@@ -1,17 +1,21 @@
 // Conteindo del Home
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
+    img {
+      border-radius: 25px;
 
+      @media (max-width: @phone) {
+        width: 100%;
+      }
+    }
   }
 
   .music-images {
@@ -24,6 +28,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    .tecnologia,
+    .ondas {
+      @media (max-width: @phone) {
+        display: none;
+      }
+    }
+    .auricular {
+      @media (max-width: @phone) {
+        width: 100%;
+      }
     }
   }
 
@@ -58,6 +73,7 @@
       }
 
       .btn {
+        .btn-registrarse(@btn-bg-color, white );
       }
     }
 
